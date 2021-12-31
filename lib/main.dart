@@ -10,6 +10,7 @@ void main() async {
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (_) => Person()),
+      ChangeNotifierProvider(create: (_) => Staff()),
     ],
     child: MyApp_c(),
   ));

@@ -6,10 +6,10 @@ class PersonModel{
   PersonModel({required this.name, required this.age});
 
   //to get data from firebase
-  PersonModel.fromJson(Map < String,dynamic > data ){
-    name = data['name'] ??  '';
-    age = data['age'];
-    address = data['address'] ?? '';
+  PersonModel.fromJson(Map < String,dynamic > stuData ){
+    name = stuData['name'] ??  '';
+    age = stuData['age'];
+    address = stuData['address'] ?? '';
   }
   //to store data in firebase
    Map<String,dynamic> toJson() {
